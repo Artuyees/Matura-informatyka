@@ -1,5 +1,3 @@
-from unittest import skip
-
 
 file = open("NAPIS.TXT")
 rows = file.readlines()
