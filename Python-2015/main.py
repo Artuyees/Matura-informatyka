@@ -31,8 +31,9 @@ print(f"4.2:\tby 2: {div_2_count}\tby 8: {div_8_count} ")
 
 
 # 4.3
-
-min_number = 2**8
+# jesli 1 indeks jest najmniejszy to jest mniejszy od podstawowej wartosci 
+# jesli którykolwiek inny to napewno jest mniejszy także od pierwszego
+min_number = int(rows[0], 2)+1
 min_index = 0
 max_number = 0
 max_index = 0
@@ -47,6 +48,9 @@ for row in rows:
         max_number = number
         max_index = rows.index(row)
 
-print(f"4.3:\tmin: {min_index}, max: {max_index}")
+
+# minimum i maksimum +1 bo chodzi o wiersz a nie o indeks
+# Nieuważne czytanie i 6pkt stracone
+print(f"4.3:\tmin: {min_index+1}, max: {max_index+1}")
 
 file.close()
